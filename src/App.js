@@ -25,11 +25,6 @@ function App() {
             {item.map((el) => (
               <PizzaBlock {...el} />
             ))}
-
-            {/* <PizzaBlock title="Пеперони" price="3213" />
-            <PizzaBlock title="Мексиканская" price="3232" />
-            <PizzaBlock title="Четыре сыра" price="1433" />
-            <PizzaBlock title="Острая" price="590" /> */}
           </div>
           {/* <ul className="Pagination_root__uwB0O">
             <li className="previous disabled">
