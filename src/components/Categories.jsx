@@ -10,7 +10,7 @@ const Categories = () => {
     'Острые',
     'Закрытые',
   ];
-  const [activeIndex, setActiveIndex] = useState(2);
+  const [activeIndex, setActiveIndex] = useState(0);
 
   const onClickCategory = (index) => {
     setActiveIndex(index)
@@ -21,7 +21,7 @@ const Categories = () => {
       <ul>
         {
           categories.map((item, index) => (
-            <li onClick={() => onClickCategory(index)} className={activeIndex === index ? 'active' : ''}>{item}</li>
+            <li key={index} onClick={() => onClickCategory(index)} className={activeIndex === index ? 'active' : ''}>{item}</li>
           ))
         }
       </ul>
