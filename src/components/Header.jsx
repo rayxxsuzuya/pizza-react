@@ -1,8 +1,10 @@
+import { Link } from 'react-router-dom';
+
 const Header = () => {
   return (
     <div className="header">
         <div className="container">
-          <a href="/">
+          <Link to="/">
             <div className="header__logo">
               <img
                 width="38"
@@ -14,7 +16,7 @@ const Header = () => {
                 <p>самая вкусная пицца во вселенной</p>
               </div>
             </div>
-          </a>
+          </Link>
           {/* <div className="Search_root__eiX89">
             <svg
               className="Search_icon__XMmYc"
@@ -50,7 +52,7 @@ const Header = () => {
             <input className="Search_input__klILD" placeholder="Поиск пиццы..." value="" />
           </div> */}
           <div className="header__cart">
-            <a className="button button--cart" href="/cart">
+            <Link className="button button--cart" to="/cart">
               <span>1350 ₽</span>
               <div className="button__delimiter"></div>
               <svg
@@ -79,7 +81,7 @@ const Header = () => {
                   strokeLinejoin="round"></path>
               </svg>
               <span>2</span>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
